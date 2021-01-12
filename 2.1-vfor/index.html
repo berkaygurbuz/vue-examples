@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>V-For Example</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+           
+                <table >
+                    <tr>
+                        <td>ID</td>
+                        <td>Name</td>
+                        <td>Location</td>
+                    </tr>
+                    <tr v-for="item in profile">
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.location}}</td>
+                    </tr>
+                </table>
+            
+        </div>
+    </body>
+</html>

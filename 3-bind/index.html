@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Bind Example</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <!-- It works -->
+            <h1>{{imgName}}</h1>
+            <img v-bind:src="imgUrl"/>
+
+            <!-- It does not work!-->
+            <!-- 
+                <img v-bind:src="{{imgUrl}}" />
+                <img src="{{imgUrl}}" />
+            -->
+        </div>
+    </body>
+</html>
