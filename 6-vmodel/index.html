@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>V-Model Example</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            Name : <input type="text" v-model="name" placeholder="Enter Your Name">
+            {{name}}
+            <br>
+            <br>
+            Surname : <input type="text" v-model="surname" placeholder="Enter Your Surname">
+            {{surname}}
+<br><br>
+            <input type="checkbox" id="john" value="John Wick" v-model="checkedNames">
+            <label for="john">John Wick</label>
+            <input type="checkbox" id="mario" value="Mario Gomez" v-model="checkedNames">
+            <label for="mario">Mario Gomez</label>
+            <input type="checkbox" id="atiba" value="Atiba" v-model="checkedNames">
+            <label for="atiba">Atiba</label>
+ 
+            <p>{{checkedNames}}</p>
+        </div>
+    </body>
+</html>
